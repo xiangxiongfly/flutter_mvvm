@@ -14,6 +14,8 @@ void main() {
   );
 }
 
+final GlobalKey<NavigatorState> globalKey = GlobalKey<NavigatorState>();
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter MVVM学习',
+      key: globalKey,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
